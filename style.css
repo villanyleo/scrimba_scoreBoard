@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Digital";
+  src: url(assets/digital.ttf);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: linear-gradient(
+    rgb(50, 12, 123),
+    rgb(112, 74, 228),
+    rgb(204, 124, 46)
+  );
+  overflow-y: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.wrap-all {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin: 0px;
+  font-size: 3em;
+  color: rgb(70, 32, 143);
+}
+
+.board {
+  height: 50vh;
+  width: 70vw;
+  padding: 50px;
+  background-color: rgba(245, 245, 225, 0.25);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.column {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.score-container {
+  margin: 60px auto;
+  border-radius: 10px;
+  font-family: "Digital", monospace;
+  width: 140px;
+  height: 140px;
+  color: rgb(120, 80, 193);
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.score {
+  transform: translateY(8px);
+  font-size: 6em;
+}
+
+button {
+  font-family: "Digital", monospace;
+  font-weight: 800;
+  color: rgb(70, 32, 143);
+  letter-spacing: 0.3em;
+  margin: auto 3px;
+  padding: 10px 10px 5px 10px;
+  border: 3px solid rgb(70, 32, 143);
+  border-radius: 5px;
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+button:hover {
+  animation-name: buttonHover;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes buttonHover {
+  100% {
+    scale: 1.05;
+  }
+}
